@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Meta ide izmeju head ONLY!!!-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <meta name="Description" content="Experiment">
+  <meta http-equiv="refresh" content="25">
+  
+  <meta name="keywords" content="Experiment,Sola,Programing">
+  <!-- http-equip refresha stranicu samo svako "" sekundi-->
+<!-- Keywords,za lakse pretrazivanje keywordovi-->
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: rgba(149, 214, 89, 0.644); align-content: center;">
     <h1>
         This is page 2
-        <hr>
-<a href="index.html" target="_self"
+  <hr>
+<h1>
+    Experiment</h1>
+    <br>
+<p><span style="background-color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Deleniti voluptates, possimus voluptas atque, iste deserunt ea consequatur accusamus corporis quasi, in repellat qui eveniet quam minus neque. Molestias, quis! Voluptatem.</p>
+<!--Span nam se koristi da odredi neki dio i taj dio samo mozemo editovat.Prijmjer iznad.-->
+<!--Div,nam je kao box,i sve sto promjenimo na divu nam mijenja sve u njemu:Npr-->
+<div style="background-color: rgba(128, 128, 128, 0.445);">
+<p><span style="color: rgba(0, 0, 255, 0.616);">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Repudiandae amet similique eligendi voluptatibus accusantium a quos ad eveniet molestiae aliquid numquam quia, aperiam, assumenda laudantium aliquam rem deserunt ducimus doloremque?</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum similique modi esse id sequi maiores excepturi, fugit quaerat exercitationem, inventore sed molestiae dicta dolores a at. Distinctio, dolore. Doloremque, odit.</p>
+</div>
+
+
+
+
+
+
+
+<!--Iframe,ubacivanje drugog sajta u svoj sajt,poput advertismentova itd..-->
+<iframe style="border: 0;" src="ad.html" width="500" height="500"></iframe>
+
+<!--style border,da se remova border.-->
+
+<!--Button-->
+<a href="https:youtube.com">
+<button style="color: rgba(184, 38, 19, 0.884);background-color: rgba(10, 216, 96, 0.548);border-radius: 76px;"><h3>Click me</h3></button>
+</a>
+
+<!--Ima i "onclick" atribut za button ali to java koristi.Npr:-->
+<button onclick="doSomething()"; style="background-color: red;border-radius: 30px;"><h3>BLOOP</h3></button>
+<p id="test">Hello</p>
+<script>
+    function doSomething(){
+        document.getElementById("test").innerHTML="Love You <3"
+    }
+</script>
+
+<h2>Forme</h2>
+
+    <form>
+        <div>
+        <label style="border-radius: 30px; for="fname">Ime</label>
+        <input style="border-radius: 35px;" type="text" id="samo" name="samo" placeholder="Ime">
+    </div><div>
+        <br>
+        <label style="border-radius: 30px; for="fname">Prezime</label>
+        <input style="border-radius: 35px;" type="text" id="laga" name="laga" placeholder="Prezime">
+    </div>
+    <div>
+<label for="password">Password</label>
+<input style="border-radius: 35px;" type="password" name="password" placeholder="Your password" minlength="6" maxlength="18">
+    </div>
+    <div>
+        <input type="reset">
+    <input type="submit">
+    </div>
+    </form>
+<!--Da bi napravili "signup i to"treba nam label u koji ide za sta je(deskripcija),pa input dje se unose podaci-->
+<!--Da bi napravio reset npr samo stavis izmedju div, input i type reset,ili submit,ali za submit treba server setupovan da bi se informacija slale tamo-->
+
+
+
+
+
+<br><a href="index.html" target="_self"
 >Go back</a>
     </h1>
+    <br>
 <a href="something.html"
-</a>page 3
+>page 3</a>
+
+
+
 
 </body>
 </html>
